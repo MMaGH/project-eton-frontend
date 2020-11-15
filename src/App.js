@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import {Card, CardContainer} from './styled_components/card'
+import {Card, CardContainer, CardHeader} from './styled_components/card'
 
 function App() {
   return (
@@ -11,7 +11,9 @@ function App() {
           1 Card test
         </Card>
         <Card>
+          <CardHeader>
           2 Card test
+          </CardHeader>
           Card test
           Card test
           Card test
