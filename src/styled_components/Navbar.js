@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 
 
 
+
 export const NavBar = styled.div`
     position: fixed;
     height: 100vh;
@@ -14,7 +15,7 @@ export const NavBar = styled.div`
     border-right: 3px solid black;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
-    :hover {
+    &:hover {
         left: 0;
         transition: 500ms;
     }
