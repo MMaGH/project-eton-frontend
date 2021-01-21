@@ -19,6 +19,11 @@ export const Card = styled.div`
     margin: 10px;
     display: inline-flexbox;
     column-fill: balance;
+    transition: 500ms;
+    :hover {
+        transition: 500ms;
+        box-shadow: 5px 5px 50px 1px white ;
+    }
 `
 
 export const CardContent = styled.div`

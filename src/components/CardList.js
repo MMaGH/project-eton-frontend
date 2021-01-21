@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import CardComponent from "./CardComponent";
-import {CardContainer} from '../styled_components/card'
+import {CardContainer} from '../styled_components/Card.js'
 import data from "../data/data.json";
 
 export default function CardList(props) {

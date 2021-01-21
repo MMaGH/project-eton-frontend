@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 
 
-export const HeaderBar = styled.div`
+export const NavBar = styled.div`
     position: fixed;
     height: 100vh;
     width: 15vw;
@@ -20,7 +20,7 @@ export const HeaderBar = styled.div`
     }
 `
 
-export const HeaderItem = styled(Link)`
+export const NavItem = styled(Link)`
     position: relative;
     display: inline-block;
     left: -45px;

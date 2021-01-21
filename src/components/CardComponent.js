@@ -1,5 +1,5 @@
 import React from 'react'
-import {Card, CardHeader, CardContent} from '../styled_components/card'
+import {Card, CardHeader, CardContent} from '../styled_components/Card'
 
 
 export default function CardComponent(props) {
