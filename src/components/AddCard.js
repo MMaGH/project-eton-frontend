@@ -1,4 +1,5 @@
 import React from 'react'
+import Datahandler from "../service/Datahandler";
 import { AddContainer,
         ShowAddCardButton,
         AddCardForm,
@@ -8,12 +9,11 @@ import { AddContainer,
         AddCardContent,
         Card,
         AddCardSettings,
-        ColorPicker,
-        Color,
         ColorInput} from "../styled_components/AddCard";
 
 
 export default function AddCard() {
+    const datahandler = new Datahandler();
 
     function click() {
         let navbar = document.querySelector("#AddContainer");
@@ -41,9 +41,22 @@ export default function AddCard() {
         card.style.borderColor = color;
     }
 
+    function submitHandler(event) {
+        event.preventDefault();
+        let note = {
+            "id": 0, 
+            "header": event.target[0].value,
+            "content": event.target[1].value,
+            "background": event.target[2].value,
+            "color": event.target[3].value
+        }
+        console.log(note)
+        datahandler.addNote(note)
+    }
+
     return (
             <AddContainer id="AddContainer" className="activated">
-                 <AddCardForm>
+                 <AddCardForm onSubmit={submitHandler}>
                      <Card id="newCard">
                         <AddCardTitle placeholder="Title"/>
                         <AddCardContent placeholder="Note goes here" />

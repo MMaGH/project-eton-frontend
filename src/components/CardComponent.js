@@ -7,7 +7,7 @@ export default function CardComponent(props) {
     const style = {
          "background-color": props.card.background,
          "color": props.card.color,
-         "border-color": props.card.color
+         "borderColor": props.card.color
      }
 
     return (
