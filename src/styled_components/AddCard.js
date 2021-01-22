@@ -1,7 +1,7 @@
 import styled from "styled-components"
 
 export const AddContainer = styled.div`
-    background-color: white;
+    background-color: ;
     width: 50vw;
     height: 50vh;
     position: fixed;
@@ -28,5 +28,100 @@ export const ShowAddCardButton = styled.div`
     font-weight: bold;
     color: white;
     box-shadow: 5px 5px black;
+    cursor: pointer;
+
+`
+
+export const AddCardForm = styled.form`
+    width: 100%;
+    height: 100%;
+    background-color: #282c34;
+`
+
+export const AddCardContent = styled.textarea`
+    position: absolute;
+    background-color: inherit;
+    color: inherit;
+    bottom: 0.3vh;
+    left: 1vw;
+    width: 19vw;
+    height: 34vh;
+    resize: none;
+    border: none;
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+`
+
+export const AddCardTitle = styled.input`
+    position: absolute;
+    background-color: inherit;
+    color: inherit;
+    left: 1vw;
+    top: 1vh;
+    width: 19vw;
+    height: auto;
+    border: none;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-bottom: inherit;
+`
+
+export const AddCardSubmit = styled.button`
+    position: absolute;
+    bottom: 0;
+    left: 15px;
+    width: 20vw;
+    height: auto;
+    font-size: 25px;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    background-color: #00CE00;
+    color: white;
+    padding: 0;
+
+`
+
+export const AddCardLabel = styled.label`
+
+`
+
+export const Card = styled.div`
+    position: absolute;
+    left: 1vw;
+    top: 2vh;
+    border: 5px solid black;
+    border-radius: 10px;
+    box-shadow: 5px 5px black;
+    width: 20vw;
+    height: 40vh;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    padding-bottom: 1vh;
+    padding-top: 1vh;
+    margin-right: 5vw;
+    display: inline-flexbox;
+    column-fill: balance;
+    background-color: white;
+`
+
+export const AddCardSettings = styled.div`
+    position: absolute;
+    right: 1vw;
+    top: 2vh;
+    width: 20vw;
+    height: 40vh;
+    border: 5px solid transparent;
+    background-color: pink;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    padding-bottom: 1vh;
+    padding-top: 1vh;
+    margin-left: 5vw;
+
+`
+
+
+export const ColorInput = styled.input`
 
 `
