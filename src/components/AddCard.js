@@ -50,8 +50,11 @@ export default function AddCard(props) {
             "background": event.target[2].value,
             "color": event.target[3].value
         }
-
-
+        
+        let change = new Event("change", {bubbles: true});
+        event.target.reset();
+        event.target[2].dispatchEvent(change);
+        event.target[3].dispatchEvent(change);
         datahandler.addNote(note, (data) => props.setRefresh(data))
     }
 
