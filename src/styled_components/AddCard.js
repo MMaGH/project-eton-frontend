@@ -83,8 +83,35 @@ export const AddCardSubmit = styled.button`
 `
 
 export const AddCardLabel = styled.label`
-
+    position: absolute;
+    font-weight: bold;
+    font-size: 3vmin;
+    left: 0.5vw;
+    color: white;
+    &.colorLabel{
+        top: 2vh;
+    };
+    &.backgroundLabel {
+        top: 8vh;
+    }
 `
+
+export const ColorInput = styled.input`
+    position: absolute;
+    right: 0.5vw;
+    height: 5vh;
+    width: 5vw;
+    border: none;
+    padding: 0;
+    margin: 0;
+    &.color {
+        top: 2vh;
+    };
+    &.background {
+        top: 8vh;
+    }
+`
+
 
 export const Card = styled.div`
     position: absolute;
@@ -112,7 +139,6 @@ export const AddCardSettings = styled.div`
     width: 20vw;
     height: 40vh;
     border: 5px solid transparent;
-    background-color: pink;
     padding-left: 1vw;
     padding-right: 1vw;
     padding-bottom: 1vh;
@@ -122,6 +148,3 @@ export const AddCardSettings = styled.div`
 `
 
 
-export const ColorInput = styled.input`
-
-`

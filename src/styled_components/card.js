@@ -20,6 +20,7 @@ export const Card = styled.div`
     display: inline-flexbox;
     column-fill: balance;
     transition: 500ms;
+    white-space: pre-wrap;
     :hover {
         transition: 500ms;
         box-shadow: 5px 5px 50px 1px white ;

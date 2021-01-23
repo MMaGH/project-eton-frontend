@@ -2,7 +2,8 @@ import config from "../config/config.json"
 import JsonConnection from "../service/JsonConnection"
 import ApiConnection from "../service/ApiConnection"
 
-export default class Datahandler {
+
+class Datahandler {
     constructor() {
         
         if (config.jsonMode) {
@@ -11,11 +12,20 @@ export default class Datahandler {
             this.connection = new ApiConnection();
         }
     }
+    
+    
+    addNote(note, callback) {
+        this.connection.addNote(note, callback);
+    }
 
-
-    addNote(note) {
-        this.connection.addNote(note);
+    getAllNotes(callback) {
+        return this.connection.getAllNotes(callback);
     }
     
-
+    
+}
+let datahandler = new Datahandler();
+    
+export default function getDatahandler() {
+    return datahandler;
 }

@@ -3,12 +3,15 @@ import data from "../data/data.json"
 
 export default class JsonConnection {
 
-    addNote(note) {
+    constructor() {
+        this.data = data;
+    }
+
+    addNote(note, callback) {
         let id = this.getNextId();
         note.id = id;
-        let object = this.openFile();
-        object.cards.push(note);
-        this.saveFile(object);
+        data.cards.push(note);
+        callback("success")
     }
 
     getNextId() {
@@ -17,14 +20,11 @@ export default class JsonConnection {
         return data.cards[data.cards.length - 1].id + 1
     }
 
-    openFile() {
-        return data;
+    getAllNotes(callback) {
+        callback("done");
+        return data.cards;
     }
 
-    saveFile(obj) {
-        let fs = require('fs');
-        fs.writeFile("../data/data.json", obj, 'utf8', () => console.log("success"));
-    }
 
     
 }

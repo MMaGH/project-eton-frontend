@@ -1,5 +1,5 @@
 import React from 'react'
-import Datahandler from "../service/Datahandler";
+import getDatahandler from "../service/Datahandler";
 import { AddContainer,
         ShowAddCardButton,
         AddCardForm,
@@ -12,8 +12,8 @@ import { AddContainer,
         ColorInput} from "../styled_components/AddCard";
 
 
-export default function AddCard() {
-    const datahandler = new Datahandler();
+export default function AddCard(props) {
+    const datahandler = getDatahandler();
 
     function click() {
         let navbar = document.querySelector("#AddContainer");
@@ -50,8 +50,9 @@ export default function AddCard() {
             "background": event.target[2].value,
             "color": event.target[3].value
         }
-        console.log(note)
-        datahandler.addNote(note)
+
+
+        datahandler.addNote(note, (data) => props.setRefresh(data))
     }
 
     return (
@@ -62,10 +63,10 @@ export default function AddCard() {
                         <AddCardContent placeholder="Note goes here" />
                      </Card>
                     <AddCardSettings>
-                        <AddCardLabel>Background Color</AddCardLabel>
-                        <ColorInput onChange={backgroundChangeHandler} type="color" className="background" value="#000002"/><br/>
-                        <AddCardLabel>Font and Border Color</AddCardLabel>
-                        <ColorInput onChange={contentChangeHandler} type="color" className="content" value="#fdffff"/>
+                        <AddCardLabel className="backgroundLabel">Background</AddCardLabel>
+                        <ColorInput onChange={backgroundChangeHandler} type="color" className="background" defaultValue="#FFFFFF"/>
+                        <AddCardLabel className="colorLabel">Font and Border</AddCardLabel>
+                        <ColorInput onChange={contentChangeHandler} type="color" className="content"/>
                         <AddCardSubmit>Save Note</AddCardSubmit>
                     </AddCardSettings>
                  </AddCardForm>
