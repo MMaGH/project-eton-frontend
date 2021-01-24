@@ -1,7 +1,6 @@
 import styled from "styled-components"
 
 export const AddContainer = styled.div`
-    background-color: ;
     width: 50vw;
     height: 50vh;
     position: fixed;
