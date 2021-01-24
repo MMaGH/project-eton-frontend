@@ -9,6 +9,7 @@ export const CardContainer = styled.div`
 
 
 export const Card = styled.div`
+    position: relative;
     border: 5px solid black;
     border-radius: 10px;
     box-shadow: 5px 5px black;
@@ -30,6 +31,7 @@ export const Card = styled.div`
 export const CardContent = styled.div`
     display: inline-flex;
     text-align: justify;
+    width: 100%;
 `
 
 export const CardHeader = styled.h1`

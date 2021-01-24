@@ -17,11 +17,11 @@ function App() {
         <Navbar></Navbar>
           <Route exact="/">
             <Content className="content">
-              <AddCard 
-                setRefresh = {setRefresh}
-              />
               <CardList
                 refresh = {refresh}
+                setRefresh = {setRefresh}
+              />
+              <AddCard 
                 setRefresh = {setRefresh}
               />
             </Content>

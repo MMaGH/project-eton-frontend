@@ -59,7 +59,7 @@ export default function AddCard(props) {
     }
 
     return (
-            <AddContainer id="AddContainer" className="activated">
+            <AddContainer id="AddContainer">
                  <AddCardForm onSubmit={submitHandler}>
                      <Card id="newCard">
                         <AddCardTitle placeholder="Title"/>
