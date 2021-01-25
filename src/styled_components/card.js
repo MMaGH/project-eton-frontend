@@ -4,7 +4,8 @@ export const CardContainer = styled.div`
     width: 70vw;
     margin-top: 5vh;
     columns: 300px;
-    flex: content;    
+    flex: content;
+    transition: 500ms;
 `
 
 
@@ -31,7 +32,14 @@ export const Card = styled.div`
 export const CardContent = styled.div`
     display: inline-flex;
     text-align: justify;
+    transition: 500ms;
     width: 100%;
+    cursor: pointer;
+    &.collapsed {
+        transition: 500ms;
+        height: 20px;
+        overflow: hidden;
+    }
 `
 
 export const CardHeader = styled.h1`
