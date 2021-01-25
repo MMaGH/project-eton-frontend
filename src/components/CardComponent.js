@@ -10,10 +10,20 @@ export default function CardComponent(props) {
          "borderColor": props.card.color
      }
 
+    function clickHandler(event) {
+        event.preventDefault();
+        let target = event.target;
+        if (target.classList.contains("collapsed")) {
+            target.classList.remove("collapsed");
+        } else {
+            target.classList.add("collapsed");
+        }
+    }
+
     return (
         <Card style={style}>
             <CardHeader>{props.card.header}</CardHeader>
-            <CardContent>{props.card.content}</CardContent>
+            <CardContent onClick={clickHandler}>{props.card.content}</CardContent>
         </Card>
     )
 }
