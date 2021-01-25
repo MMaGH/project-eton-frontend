@@ -13,20 +13,20 @@ function App() {
 
   return (
     <div className="App">
-      <Router>
-        <Navbar></Navbar>
+      <Content className="content">
+        <Router>
           <Route exact="/">
-            <Content className="content">
               <CardList
                 refresh = {refresh}
                 setRefresh = {setRefresh}
-              />
+                />
               <AddCard 
                 setRefresh = {setRefresh}
-              />
-            </Content>
+                />
           </Route>
-      </Router>
+          <Navbar></Navbar>
+        </Router>
+      </Content>
     </div>
   );
 }
