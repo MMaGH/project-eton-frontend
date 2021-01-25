@@ -28,6 +28,9 @@ Tasks:
 - Tickboxes
 - Ability to cooperate with others
 
+## Technologies
+The app currently uses JS6 and React
+
 
 ## Viewing the site
 Currently you can run the app with npm run in development mode.\
