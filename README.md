@@ -8,6 +8,10 @@ Notes:
 - Note adding
 - Changing colors of the cards
 
+Tasks:
+- Listing Tasks
+- Crossing out Tasks
+
 
 ## Planned Features
 
@@ -23,7 +27,6 @@ Notes:
 Tasks:
 - Adding tasks
 - Deleting tasks
-- Connecting tasks
 - Ordering tasks
 - Tickboxes
 - Ability to cooperate with others
