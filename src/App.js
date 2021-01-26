@@ -24,6 +24,9 @@ function App() {
                 setRefresh = {setRefresh}
                 />
           </Route>
+          <Route exact="/task">
+              Tasks Goes Here
+          </Route>
           <Navbar></Navbar>
         </Router>
       </Content>
