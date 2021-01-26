@@ -10,9 +10,9 @@ export const NavBar = styled.div`
     width: fit-content;
     left: -100%;
     top: 0;
-    background-color: #000a24;
-    transition: 1000ms;
-    border-right: 3px solid black;
+    background-color: #FFFFFF;
+    transition: 3000ms;
+    border-right: 3px solid #000000;
     border-bottom-right-radius: 10px;
     padding-left: 2vh;
     padding-right: 1vh;
@@ -32,12 +32,16 @@ export const NavItem = styled(Link)`
     padding-bottom: 1vh;
     padding-left: 1vw;
     padding-right: 1vw;
-
     border-radius: 10px;
-    background-color: #001c63;
-    color: white;
+    background-color: rgba(0, 0, 0, 0.1);
+    color: #000000;
     text-decoration: none;
     text-align: right;
+    transition: 500ms;
+    &:hover {
+        transition: 500ms;
+        background-color: rgba(0, 0, 0, 0.3)
+    }
 `
 
 export const NavOpenButton = styled.div`
@@ -49,7 +53,7 @@ export const NavOpenButton = styled.div`
     color: white;
     font-size: 3.5vh;
     font-weight: bold;
-    background-color: #001c63;
+    background-color: #000000;
     border-bottom-right-radius: 10px;
     border-bottom: 0.3vh solid white;
     border-right: 0.3vh solid white;
