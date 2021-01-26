@@ -6,6 +6,7 @@ import CardList from "./components/CardList";
 import { Content } from "./styled_components/Content";
 import Navbar from "./components/NavbarComponent";
 import AddCard from "./components/AddCard";
+import TasksComponent from "./components/TasksComponent";
 
 function App() {
   const [refresh, setRefresh] = useState("")
@@ -15,7 +16,7 @@ function App() {
     <div className="App">
       <Content className="content">
         <Router>
-          <Route exact="/">
+          <Route exact path="/">
               <CardList
                 refresh = {refresh}
                 setRefresh = {setRefresh}
@@ -23,6 +24,9 @@ function App() {
               <AddCard 
                 setRefresh = {setRefresh}
                 />
+          </Route>
+          <Route exact path="/task">
+              <TasksComponent/>
           </Route>
           <Navbar></Navbar>
         </Router>

@@ -21,6 +21,10 @@ class Datahandler {
     getAllNotes(callback) {
         return this.connection.getAllNotes(callback);
     }
+
+    getAllTasks(callback) {
+        return this.connection.getAllTasks(callback);
+    }
     
     
 }

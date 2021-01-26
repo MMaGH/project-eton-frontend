@@ -25,6 +25,11 @@ export default class JsonConnection {
         return data.cards;
     }
 
+    getAllTasks(callback) {
+        callback("done");
+        return data.tasks;
+    }
+
 
     
 }
