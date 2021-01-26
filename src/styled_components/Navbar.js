@@ -28,7 +28,7 @@ export const NavItem = styled(Link)`
     margin-left: 10px;
     width: fit-content;
     height: 3vh;
-    font-size: 3vmin;
+    font-size: 3vh;
     padding-bottom: 1vh;
     padding-left: 1vw;
     padding-right: 1vw;
