@@ -6,6 +6,7 @@ import CardList from "./components/CardList";
 import { Content } from "./styled_components/Content";
 import Navbar from "./components/NavbarComponent";
 import AddCard from "./components/AddCard";
+import TasksComponent from "./components/TasksComponent";
 
 function App() {
   const [refresh, setRefresh] = useState("")
@@ -25,7 +26,7 @@ function App() {
                 />
           </Route>
           <Route exact path="/task">
-              Tasks Goes Here
+              <TasksComponent/>
           </Route>
           <Navbar></Navbar>
         </Router>

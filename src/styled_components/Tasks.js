@@ -12,10 +12,10 @@ export const TaskTitle = styled.div`
 
 `
 
-export const TaskTitle = styled.div`
+export const TaskContent = styled.div`
 
 `
 
-export const TaskChech = styled.div`
+export const TaskCheck = styled.input`
 
 `
