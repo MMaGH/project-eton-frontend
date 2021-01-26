@@ -21,7 +21,6 @@ export const TaskCard = styled.div`
     border-radius: 1vh;
     border-top-left-radius: 0;
     text-align: left;
-
 `
 
 export const TaskTitle = styled.h1`
@@ -47,13 +46,16 @@ export const TaskContent = styled.div`
     background-color: rgba(0,0,0,0.1);
     border-radius: 1vh;
     bottom: 0;
-    margin-right: 1vw;
+    margin: 0.5vw;
     padding: 1vh;
+
     display: inline-block;
     width: fit-content;
     font-size: 2vh;
     cursor: pointer;
+    transition: 500ms;
     &.completed {
+        transition: 500ms;
         text-decoration: line-through;
         opacity: 50%;
     }
