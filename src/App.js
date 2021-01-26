@@ -15,7 +15,7 @@ function App() {
     <div className="App">
       <Content className="content">
         <Router>
-          <Route exact="/">
+          <Route exact path="/">
               <CardList
                 refresh = {refresh}
                 setRefresh = {setRefresh}
@@ -24,7 +24,7 @@ function App() {
                 setRefresh = {setRefresh}
                 />
           </Route>
-          <Route exact="/task">
+          <Route exact path="/task">
               Tasks Goes Here
           </Route>
           <Navbar></Navbar>
