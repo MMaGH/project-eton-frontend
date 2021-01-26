@@ -9,6 +9,11 @@ Notes:
 - Changing colors of the cards
 - Collapsing note body
 
+Tasks:
+- Listing Tasks
+- Crossing out Tasks
+
+
 ## Planned Features
 
 General:
@@ -23,7 +28,6 @@ Notes:
 Tasks:
 - Adding tasks
 - Deleting tasks
-- Connecting tasks
 - Ordering tasks
 - Tickboxes
 - Ability to cooperate with others
