@@ -7,6 +7,7 @@ This is the frontend part of a notekeeping app.
 Notes:
 - Note adding
 - Changing colors of the cards
+- Collapsing note body
 
 Tasks:
 - Listing Tasks
