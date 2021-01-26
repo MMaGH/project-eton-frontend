@@ -17,7 +17,7 @@ export const TaskCard = styled.div`
     padding-left: 1vw;
     padding-right: 1vw;
     margin-top: 10vh;
-    background-color: pink;
+    background-color: white;
     border-radius: 1vh;
     border-top-left-radius: 0;
     text-align: left;
@@ -37,17 +37,26 @@ export const TaskTitle = styled.h1`
     padding-right: 1vw;
     border-top-left-radius: 1vh;
     border-top-right-radius: 1vh;
-    background-color: lightblue;
     text-align: justify;
+    background-color: black;
+    color: white;
 `
 
 export const TaskContent = styled.div`
     position: inherit;
+    background-color: rgba(0,0,0,0.1);
+    border-radius: 1vh;
     bottom: 0;
     margin-right: 1vw;
+    padding: 1vh;
     display: inline-block;
     width: fit-content;
     font-size: 2vh;
+    cursor: pointer;
+    &.completed {
+        text-decoration: line-through;
+        opacity: 50%;
+    }
 `
 
 export const TaskCheck = styled.input`
