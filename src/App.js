@@ -11,9 +11,6 @@ function App() {
     <div className="App">
       <Content className="content">
         <Router>
-          <Route exact path="/">
-            <Redirect to="notes"/>
-          </Route>
           <Route exact path="/notes">
               <CardList
                 addCard = {true}
@@ -23,7 +20,7 @@ function App() {
               <TasksComponent/>
           </Route>
           <Route path="/">
-            <Redirect to="/"/>
+            <Redirect to="/notes"/>
           </Route>
           <Navbar></Navbar>
         </Router>
