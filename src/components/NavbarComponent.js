@@ -1,6 +1,5 @@
 import React from 'react'
 import { NavBar, NavItem, NavOpenButton } from "../styled_components/Navbar";
-import { showAddCard } from "./AddCard";
 
 
 export default function Header() {
