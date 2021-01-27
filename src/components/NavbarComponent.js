@@ -19,7 +19,7 @@ export default function Header() {
 
     return (
         <NavBar id="navbar">
-           <NavItem to="/">Notes</NavItem>
+           <NavItem to="/notes">Notes</NavItem>
            <NavItem to="/task">Tasks</NavItem>
            <NavItem>Profile</NavItem>
            <NavOpenButton onClick={clickHandler}>&#9776;</NavOpenButton>
