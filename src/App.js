@@ -1,12 +1,9 @@
 import './App.css';
-import { useState } from "react";
 import { BrowserRouter as Router, Route, Redirect} from "react-router-dom";
 import CardList from "./components/CardList";
 import { Content } from "./styled_components/Content";
 import Navbar from "./components/NavbarComponent";
-import AddCard from "./components/AddCard";
 import TasksComponent from "./components/TasksComponent";
-import HomePage from "./components/HomePageComponent";
 
 function App() {
 
@@ -15,8 +12,7 @@ function App() {
       <Content className="content">
         <Router>
           <Route exact path="/">
-            <HomePage>
-            </HomePage>
+            <Redirect to="notes"/>
           </Route>
           <Route exact path="/notes">
               <CardList
