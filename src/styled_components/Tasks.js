@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const TaskContainer = styled.div`
-    width: 70vw;
+    width: 70%;
     margin-top: 5vh;
     flex: content;
     transition: 500ms;

@@ -10,24 +10,29 @@ export default class JsonConnection {
     addNote(note, callback) {
         let id = this.getNextId();
         note.id = id;
-        data.cards.push(note);
+        this.data.cards.push(note);
         callback("success")
     }
 
     getNextId() {
-        console.log(data.cards)
-        data.cards.sort((a, b) => (a.id > b.id) ? 1 : -1)
-        return data.cards[data.cards.length - 1].id + 1
+        this.data.cards.sort((a, b) => (a.id > b.id) ? 1 : -1)
+        return this.data.cards[data.cards.length - 1].id + 1
     }
 
     getAllNotes(callback) {
         callback("done");
-        return data.cards;
+        return this.data.cards;
     }
 
     getAllTasks(callback) {
         callback("done");
-        return data.tasks;
+        return this.data.tasks;
+    }
+
+    updateNoteById(id, note, callback) {
+        let index = this.data.cards.findIndex((item) => item.id === note.id);
+        this.data.cards[index] = note;
+        callback("success");
     }
 
 
