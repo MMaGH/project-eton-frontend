@@ -22,9 +22,14 @@ class Datahandler {
         return this.connection.getAllNotes(callback);
     }
 
+    updateNoteById(id, note, callback) {
+        this.connection.updateNoteById(id, note, callback);
+    }
+
     getAllTasks(callback) {
         return this.connection.getAllTasks(callback);
     }
+
     
     
 }
