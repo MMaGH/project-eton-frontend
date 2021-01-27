@@ -1,13 +1,16 @@
 import React from 'react'
-import {Card, CardHeader, CardContent} from '../styled_components/Card'
+import {Card, CardHeader, CardContent, CardPinButton} from '../styled_components/Card'
 
 
 export default function CardComponent(props) {
+    
+    const datahandler = props.datahandler;
+    const card = props.card;
 
     const style = {
-         "background-color": props.card.background,
-         "color": props.card.color,
-         "borderColor": props.card.color
+         "background-color": card.background,
+         "color": card.color,
+         "borderColor": card.color
      }
 
     function clickHandler(event) {
@@ -19,11 +22,22 @@ export default function CardComponent(props) {
             target.classList.add("collapsed");
         }
     }
+    
+    function pinHandler(event) {
+        event.preventDefault();
+        if (card.pinned) {
+            card.pinned = false;
+        } else {
+            card.pinned = true;
+        }
+        datahandler.updateNoteById(card.id, card, (data) => props.setRefresh(data));
+    }
 
     return (
         <Card style={style}>
-            <CardHeader>{props.card.header}</CardHeader>
-            <CardContent onClick={clickHandler}>{props.card.content}</CardContent>
+            <CardPinButton onClick={pinHandler}/>
+            <CardHeader>{card.header}</CardHeader>
+            <CardContent onClick={clickHandler}>{card.content}</CardContent>
         </Card>
     )
 }

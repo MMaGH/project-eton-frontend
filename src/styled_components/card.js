@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const CardContainer = styled.div`
-    width: 70%;
+    width: 100%;
     margin-top: 5vh;
     columns: 300px;
     flex: content;
@@ -49,4 +49,31 @@ export const CardHeader = styled.h1`
     margin-top: -10px;
     display: inline-flex;
     text-align: left;
+`
+
+export const PinnedContainer = styled.div`
+    width: 100%;
+    margin-top: 8vh;
+    columns: 300px;
+    flex: content;
+    transition: 500ms;
+    padding-bottom: 2vh;
+    border-bottom: 1vh solid black;
+    border-bottom-left-radius: 3vh;
+    border-bottom-right-radius: 3vh;
+`
+
+export const CardListContainer = styled.div`
+    width: 70%;
+    min-height: 100vh;
+`
+
+export const CardPinButton = styled.div`
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 25px;
+    height: 25px;
+    background-color: red;
+    cursor: pointer;
 `
