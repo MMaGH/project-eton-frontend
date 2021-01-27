@@ -34,7 +34,7 @@ export const CardContent = styled.div`
     text-align: justify;
     transition: 500ms;
     width: 100%;
-    cursor: pointer;
+    margin-bottom: 20px;
     &.collapsed {
         transition: 500ms;
         height: 20px;
@@ -61,6 +61,7 @@ export const PinnedContainer = styled.div`
     border-bottom: 1vh solid black;
     border-bottom-left-radius: 3vh;
     border-bottom-right-radius: 3vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.08)); 
 `
 
 export const CardListContainer = styled.div`
@@ -72,8 +73,37 @@ export const CardPinButton = styled.div`
     position: absolute;
     top: 0;
     right: 0;
-    width: 25px;
-    height: 25px;
+    width: 20px;
+    height: 20px;
     background-color: red;
+    border: 2px solid black;
+    transition: 1500ms;
+    border-radius: 10px;
     cursor: pointer;
+    &.pinned {
+        transition: 1500ms;
+        background-color: green;
+    }
+    &.pinned:hover{
+        transition: 1500ms;
+        background-color: red;
+    }
+    &:hover {
+        transition: 1500ms;
+        background-color: green;
+    }
+`
+
+export const CardCloseButton = styled.div`
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 20px;
+    cursor: pointer;
+    text-align: center;
+    border-top: 2px solid;
+    border-color: inherit;
+    font-size: 16px;
+    font-weight: bold;
 `
