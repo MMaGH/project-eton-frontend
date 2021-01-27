@@ -1,9 +1,11 @@
 import React from 'react'
+import CardList from "./CardList";
+import TasksComponent from "./TasksComponent";
 
 export default function HomePage() {
     return (
         <div>
-            Home Page Component
+            HOME PAGE
         </div>
     )
 }

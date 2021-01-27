@@ -9,24 +9,19 @@ import TasksComponent from "./components/TasksComponent";
 import HomePage from "./components/HomePageComponent";
 
 function App() {
-  const [refresh, setRefresh] = useState("")
-
 
   return (
     <div className="App">
       <Content className="content">
         <Router>
           <Route exact path="/">
-            <HomePage />
+            <HomePage>
+            </HomePage>
           </Route>
           <Route exact path="/notes">
               <CardList
-                refresh = {refresh}
-                setRefresh = {setRefresh}
-                />
-              <AddCard 
-                setRefresh = {setRefresh}
-                />
+                addCard = {true}
+              />
           </Route>
           <Route exact path="/task">
               <TasksComponent/>
