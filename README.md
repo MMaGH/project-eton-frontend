@@ -8,6 +8,7 @@ Notes:
 - Note adding
 - Changing colors of the cards
 - Collapsing note body
+- Pinning notes
 
 Tasks:
 - Listing Tasks
@@ -23,13 +24,11 @@ Notes:
 - Deleting tasks
 - Changing note order
 - Connecting notes
-- Tickboxes
 
 Tasks:
 - Adding tasks
 - Deleting tasks
 - Ordering tasks
-- Tickboxes
 - Ability to cooperate with others
 
 ## Technologies
