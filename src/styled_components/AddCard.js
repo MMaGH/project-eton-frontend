@@ -7,7 +7,6 @@ export const AddContainer = styled.div`
     left: 25vw;
     top: -50vh;
     transition: 500ms;
-    box-shadow: 5px 5px black;
     &.activated {
         transition: 500ms;
         top: 0;
@@ -20,13 +19,13 @@ export const ShowAddCardButton = styled.div`
     height: 30px;
     width: 50vw;
     bottom: -30px;
-    background-color: #FE652F;
+    background-color: #000000;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
     font-size: 22px;
     font-weight: bold;
-    color: white;
-    box-shadow: 5px 5px black;
+    color: #FFFFFF;
+    border-bottom: 2px solid #FFFFFF;
     cursor: pointer;
 
 `
